@@ -3,11 +3,11 @@ package com.design.patterns.singleton
 class Execution {
 
     fun getInstance(): Setting {
-        if (instance == null) {
-            instance = Setting()
+        return instance?.let {
+            instance
+        }.run {
+            Setting()
         }
-
-        return instance as Setting
     }
 
     companion object {
