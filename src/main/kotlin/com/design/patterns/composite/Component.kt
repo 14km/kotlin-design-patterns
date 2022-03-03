@@ -1,5 +1,6 @@
 package com.design.patterns.composite
 
 interface Component {
-    fun operation()
+    fun getPrice(): Int
+    fun getName(): String
 }
