@@ -7,7 +7,7 @@ class BridgeClientTest : FunSpec({
 
     val client = BridgeClient()
 
-    test("client test") {
+    test("Bridge 패턴을 실행한다.") {
         client.run()
     }
 
